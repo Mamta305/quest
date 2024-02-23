@@ -14,7 +14,6 @@ describe('To create new org', () => {
         cy.get(".submitBtn").click();  
         cy.get("input[placeholder='Enter your Name']").type("gbcfdbx");
         cy.get(':nth-child(1) > .gs_card_body').click();
-        cy.get('[href="/admin/get-started"]').click();
         cy.get(':nth-child(2) > .gs_card_body').click();
         cy.get('[href="/admin/get-started"]').click();
         cy.get(':nth-child(3) > .gs_card_body').click();
