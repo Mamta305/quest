@@ -14,12 +14,7 @@ describe('Quest login', () => {
         cy.get('[aria-label="Please enter OTP character 6"]').type("1");    
         cy.get(".submitBtn").click();  
     });
-    it("login with gmail",()=>{
-        cy.visit("https://staging.questlabs.ai/login");
-        cy.get('a > .loginv3-right-google').click();
-
-    })
-    it.only("login with email",()=>{
+    it("login with email",()=>{
         cy.visit("https://staging.questlabs.ai/login/");
         cy.get("input[placeholder='example@gmail.com']").click();
         cy.get("input[placeholder='example@gmail.com']").type("quest-user-1@gmail.com");
